@@ -1,0 +1,429 @@
+/*
+===============================
+header area
+===============================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+/*
+===============================
+header area
+===============================
+*/
+#top_head {
+    background-color: #BA2E1F;
+    width: 100%;
+    clear: both;
+}
+.inner_top_head {}
+.inner_top_head ul li a {
+    position: relative;
+}
+.inner_top_head ul li a::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    top: 4px;
+    right: -16px;
+}
+.inner_top_head ul li a::after:last-child {
+    display: none !important;
+    width: 0px;
+}
+.inner_top_head form input {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 50%;
+}
+.inner_top_head form {
+    position: relative;
+    top: -0.2rem
+}
+.inner_top_head form input[type="submit"] {
+    background-image: url(../pic/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    /*    top: rem;*/
+    right: 0.1rem;
+    width: 8%;
+    font-size: 20px
+}
+.inner_main_head ul li a {
+    background: #333333;
+    border-radius: 50%;
+    width: 34px;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 10px
+}
+.inner_main_menu_area ul li {
+    position: relative;
+}
+.inner_main_menu_area ul ul {
+    position: absolute;
+    background: #2B2B2B;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    display: none;
+}
+.inner_main_menu_area ul ul li {
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+.inner_main_menu_area ul li:hover ul {
+    display: block;
+    transition: 0.5s;
+}
+.inner_main_menu_area ul li:hover ul li a {
+    color: white;
+    width: 100%;
+}
+.inner_main_menu_area ul li ul li a:hover {
+    color: #BA2E1F;
+}
+/*
+===============================
+manu area
+===============================
+*/
+.inner_main_menu_area {
+    background-color: #333333;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    border-radius: 10px;
+}
+.inner_main_menu_area::after {
+    background-color: #2B2B2B;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+.inner_main_menu_area ul li a {
+    color: #fff;
+}
+.inner_main_menu_area ul li:hover a {
+    color: #BA2E1F;
+    transition: 0.5s;
+}
+#hero_area {
+    clear: both;
+}
+.inner_hero_area img {
+    width: 100%
+}
+.inner_hero_area h2 {
+    font-size: 86px;
+    line-height: 1em;
+}
+.inner_hero_area p {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-weight: normal;
+    color: #666666;
+}
+.inner_hero_area a {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-weight: normal;
+    color: red;
+}
+.inner_hero_area a:hover {
+    color: gray;
+}
+#about_service_area {
+    background: #F2F2F2;
+    clear: both;
+    transition: 0.5s;
+}
+.inner_about_service_area h2 {
+    font-size: 24px;
+    color: #333333;
+    /*    text-align: center;*/
+}
+.inner_about_service_area p {
+    font-size: 14px;
+    color: #878787;
+}
+.inner_about_service_area a {
+    font-size: 13px;
+    color: #BA2E1F;
+    text-align: end;
+    display: block;
+}
+.inner_about_service_area a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+.about_area img {
+    width: 300px;
+    height: 210px;
+    border: 5px solid #fff;
+}
+.service_area img {
+    width: 64px;
+    height: 64px;
+    float: right;
+}
+.common_child_box h6 {
+    font-size: 18px;
+    color: #666666;
+}
+.child_clint_box a {
+    padding-top: 5px;
+}
+.child_clint_box h6 {
+    background-image: url(https://nafizmh.github.io/psdtohtml/pic/service_bg.png);
+    background-repeat: no-repeat;
+    padding: 14px 0px 14px 70px;
+}
+.child_clint_box p {
+    padding-top: 30px;
+}
+/**/
+.inner_footer h4 {
+    font-size: 18px;
+    color: #666666;
+    cursor: pointer;
+    padding: 0px 0px 15px 0px;
+}
+.inner_footer p {
+    font-size: 14px;
+    color: #666666;
+}
+.inner_footer a {
+    font-size: 16px;
+    color: red;
+}
+.inner_footer a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+.inner_footer p span {
+    font-size: 13px;
+    color: red;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+}
+.inner_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.inner_footer ul li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    margin: 0px 0px 12px 0px;
+}
+.inner_footer ul li a {
+    color: #666666;
+}
+.inner_footer ul li:hover a {
+    color: red;
+    transition: 0.5s;
+}
+.inner_footer h6 {
+    color: #666666;
+    font-size: 16px;
+    padding: 18px 0px 0px 0px;
+}
+.inner_footer strong {
+    font-size: 13px;
+}
+.inner_footer strong a {
+    font-size: 14px;
+    color: red;
+    display: inline-block;
+    margin: 0;
+}
+.inner_footer strong a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+.child_blog_post a {
+    color: red;
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    margin: 25px 0px 0px 0px;
+}
+.child_blog_post a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+.inner_footer form {}
+.inner_footer form input {
+    width: 80%;
+    display: block;
+    background: #F2F2F2;
+    margin: 0px 0px 20px 0px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+.inner_footer form input[type="submit"] {
+    width: 30%;
+    color: red;
+}
+.inner_footer form input[type="submit"]:hover {
+    color: gray;
+    transition: 0.5s;
+}
+.inner_footer form textarea {
+    width: 80%;
+    display: block;
+    background: #F2F2F2;
+    margin: 0px 0px 20px 0px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+#coppyright_area {
+    background: #F2F2F2;
+}
+#coppyright_area span {
+    color: #919191;
+    font-size: 16px;
+}
+#coppyright_area span a {
+    color: red;
+}
+#coppyright_area span a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+.coppyright_2nd_span {
+    display: block;
+}
+#nav-check {
+    position: relative
+}
+#main_menu_area1 {
+    margin-top: -28px;
+}
+.nav-title img {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: -1px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.nav > .nav-header {
+    display: inline;
+}
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+.nav > .nav-btn {
+    display: none;
+}
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+.nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > #nav-check {
+    display: none;
+}
+@media (max-width:600px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        background: black;
+        border-radius: 3px
+    }
+    .nav > .nav-btn > label:hover,
+    .nav #nav-check:checked ~ .nav-btn > label {
+        background-color: black;
+    }
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+.m_nav_link a {
+    color: white;
+}
+.m_nav_link a:hover {
+    color: #BA2E1F;
+    ;
+}
